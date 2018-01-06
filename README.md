@@ -2,7 +2,7 @@
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=19)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![](https://jitpack.io/v/Shashank02051997/FancyAlertDialog-Android.svg)](https://jitpack.io/#Shashank02051997/FancyAlertDialog-Android)
+[![](https://jitpack.io/v/Shashank02051997/FancyGifDialog-Android.svg)](https://jitpack.io/#Shashank02051997/FancyGifDialog-Android)
 ## Prerequisites
 
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
@@ -23,33 +23,31 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	compile 'com.github.Shashank02051997:FancyAlertDialog-Android:0.1'
+	compile 'com.github.Shashank02051997:FancyGifDialog-Android:1.1'
 }
 ```
 <h2> Fancy Gif Dialog</h2>
 
 ```diff
-new FancyAlertDialog.Builder(this)
-                .setTitle("Rate us if you like the app")
-                .setBackgroundColor(Color.parseColor("#303F9F"))  //Don't pass R.color.colorvalue
-                .setMessage("Do you really want to Exit ?")
+new FancyGifDialog.Builder(this)
+                .setTitle("Granny eating chocolate dialog box")
+                .setMessage("This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog.")
                 .setNegativeBtnText("Cancel")
-                .setPositiveBtnBackground(Color.parseColor("#FF4081"))  //Don't pass R.color.colorvalue
-                .setPositiveBtnText("Rate")
-                .setNegativeBtnBackground(Color.parseColor("#FFA9A7A8"))  //Don't pass R.color.colorvalue
-                .setAnimation(Animation.POP)
+                .setPositiveBtnBackground("#FF4081")
+                .setPositiveBtnText("Ok")
+                .setNegativeBtnBackground("#FFA9A7A8")
+                .setGifResource(R.drawable.gif1)   //Pass your Gif here
                 .isCancellable(true)
-                .setIcon(R.drawable.ic_star_border_black_24dp,Icon.Visible)
-                .OnPositiveClicked(new FancyAlertDialogListener() {
+                .OnPositiveClicked(new FancyGifDialogListener() {
                     @Override
                     public void OnClick() {
-                        Toast.makeText(getApplicationContext(),"Rate",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
                     }
                 })
-                .OnNegativeClicked(new FancyAlertDialogListener() {
+                .OnNegativeClicked(new FancyGifDialogListener() {
                     @Override
                     public void OnClick() {
-                        Toast.makeText(getApplicationContext(),"Cancel",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
                     }
                 })
                 .build();
