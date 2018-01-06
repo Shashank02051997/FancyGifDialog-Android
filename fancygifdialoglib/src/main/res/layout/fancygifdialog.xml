@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="16dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativelayout1">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/gif1"
+                    android:id="@+id/gifImageView" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center"
+                    android:id="@+id/title"
+                    android:textAlignment="center"
+                    android:text="Granny eating chocolate dialog box"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center"
+                    android:id="@+id/message"
+                    android:text="This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog."
+                    android:textSize="14dp"
+                    android:layout_below="@+id/title"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="32dp">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Rate"
+                        android:textAllCaps="false"
+                        android:id="@+id/negativeBtn"
+                        android:background="@drawable/curved_shape2"
+                        android:textColor="#ffffff"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:textAllCaps="false"
+                        android:text="Ok"
+                        android:id="@+id/positiveBtn"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/curved_shape"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
