@@ -65,7 +65,12 @@ new FancyGifDialog.Builder(this)
 
 <img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/Screenshot_2018-01-07-10-24-37.png" height="420" width="240" hspace="20"><img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/Screenshot_2018-01-07-10-25-07.png" height="420" width="240" hspace="20"><img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/Screenshot_2018-01-07-10-25-26.png" height="420" width="240">
 
+## Dependencies
 
+This project use this libraries ~ Thanks to them.
+
+  [android-gif-drawable](https://github.com/koral--/android-gif-drawable)
+  
 ## Contributing
 
 Please fork this repository and contribute back using
