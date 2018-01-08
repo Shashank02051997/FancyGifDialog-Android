@@ -63,6 +63,8 @@ new FancyGifDialog.Builder(this)
 
 <img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/20180106_221054.gif" height="420" width="240" hspace="20"><img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/20180106_221227.gif" height="420" width="240" hspace="20"><img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/20180106_221357.gif" height="420" width="240">
 
+<img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/Screenshot_2018-01-07-10-24-37.png" height="420" width="240" hspace="20"><img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/Screenshot_2018-01-07-10-25-07.png" height="420" width="240" hspace="20"><img src="https://github.com/Shashank02051997/FancyGifDialog-Android/blob/master/Screenshot/Screenshot_2018-01-07-10-25-26.png" height="420" width="240">
+
 
 ## Contributing
 
