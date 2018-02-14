@@ -29,29 +29,35 @@ dependencies {
 ```
 <h2> Fancy Gif Dialog</h2>
 
-```diff
+```java
 new FancyGifDialog.Builder(this)
-                .setTitle("Granny eating chocolate dialog box")
-                .setMessage("This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog.")
-                .setNegativeBtnText("Cancel")
-                .setPositiveBtnBackground("#FF4081")
-                .setPositiveBtnText("Ok")
-                .setNegativeBtnBackground("#FFA9A7A8")
-                .setGifResource(R.drawable.gif1)   //Pass your Gif here
-                .isCancellable(true)
-                .OnPositiveClicked(new FancyGifDialogListener() {
-                    @Override
-                    public void OnClick() {
-                        Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .OnNegativeClicked(new FancyGifDialogListener() {
-                    @Override
-                    public void OnClick() {
-                        Toast.makeText(MainActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .build();
+                    .setTitle(R.string.from_resources)
+                    .setMessage(R.string.description_from_resources)
+                    .setNegativeBtnText(android.R.string.cancel)
+                    .setPositiveBtnBackground(R.color.positiveButton)
+                    .setPositiveBtnText(android.R.string.ok)
+                    .setNegativeBtnBackground(R.color.negativeButton)
+                    .setGifResource(R.drawable.gif1)
+                    .isCancellable(true)
+                    .setOnCancelListener(new DialogInterface.OnCancelListener() {
+                        @Override
+                        public void onCancel(DialogInterface dialogInterface) {
+                            toaster("Cancelled");
+                        }
+                    })
+                    .OnPositiveClicked(new FancyGifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            toaster("Ok");
+                        }
+                    })
+                    .OnNegativeClicked(new FancyGifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            toaster("Cancel");
+                        }
+                    })
+                    .build();
 ```
 
 ## Screenshots
