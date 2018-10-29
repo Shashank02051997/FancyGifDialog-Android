@@ -85,6 +85,8 @@
                         android:textAllCaps="false"
                         android:id="@+id/negativeBtn"
                         android:background="@drawable/curved_shape2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
                         android:textColor="#ffffff"
                         />
                     <Button
@@ -94,7 +96,8 @@
                         android:textAllCaps="false"
                         tools:text="Ok"
                         android:id="@+id/positiveBtn"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
                         android:background="@drawable/curved_shape"
                         android:textColor="#ffffff"
                         />
