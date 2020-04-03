@@ -77,30 +77,41 @@
                     android:paddingBottom="12dp"
                     android:layout_marginTop="32dp">
 
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50"
-                        tools:text="Rate"
-                        android:textAllCaps="false"
+                   <Button
                         android:id="@+id/negativeBtn"
-                        android:background="@drawable/curved_shape2"
-                        android:layout_marginLeft="4dp"
-                        android:layout_marginRight="4dp"
-                        android:textColor="#ffffff"
-                        />
-                    <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="50"
-                        android:textAllCaps="false"
-                        tools:text="Ok"
-                        android:id="@+id/positiveBtn"
                         android:layout_marginLeft="4dp"
                         android:layout_marginRight="4dp"
-                        android:background="@drawable/curved_shape"
+                        android:layout_weight="35"
+                        android:background="@drawable/curved_shape2"
+                        android:textAllCaps="false"
                         android:textColor="#ffffff"
-                        />
+                        tools:text="Cancle" />
+
+                    <Button
+                        android:id="@+id/negativeBtn2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="30"
+                        android:background="@drawable/curved_shape2"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        tools:text="Share" />
+
+                    <Button
+                        android:id="@+id/positiveBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="35"
+                        android:background="@drawable/curved_shape"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        tools:text="Ok" />
                 </LinearLayout>
             </RelativeLayout>
             </ScrollView>
