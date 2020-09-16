@@ -1,7 +1,7 @@
 package com.shashank.sony.fancygifdialoglib;
 
-import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
@@ -18,14 +18,14 @@ import pl.droidsonroids.gif.GifImageView;
 
 public class FancyGifDialog {
     public static class Builder {
+        int gifImageResource;
         private String title, message, positiveBtnText, negativeBtnText, pBtnColor, nBtnColor;
-        private Activity activity;
+        private Context context;
         private FancyGifDialogListener pListener, nListener;
         private boolean cancel;
-        int gifImageResource;
 
-        public Builder(Activity activity) {
-            this.activity = activity;
+        public Builder(Context context) {
+            this.context = context;
         }
 
         public Builder setTitle(String title) {
@@ -82,11 +82,11 @@ public class FancyGifDialog {
             return this;
         }
 
-        public FancyGifDialog build() {
+        public void build() {
             TextView message1, title1;
             Button nBtn, pBtn;
             GifImageView gifImageView;
-            final Dialog dialog = new Dialog(activity);
+            final Dialog dialog = new Dialog(context);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             dialog.setCancelable(cancel);
@@ -140,7 +140,7 @@ public class FancyGifDialog {
 
             dialog.show();
 
-            return new FancyGifDialog();
+            new FancyGifDialog();
 
         }
     }
