@@ -114,7 +114,7 @@ but will be thoroughly reviewed .
 - [Facebook](https://www.facebook.com/shashanksinghal02)
 
 ## Donation
-If this project help you reduce time to develop, you can give me a cup of coffee :) 
+If this project help you reduce time to develop, you can give me a cup of coffee :)
 
 <a href="https://www.buymeacoffee.com/mXUuDW7" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FancyGifDialogLibrary</string>
+    <string name="from_resources">This title came from resources</string>
+    <string name="description_from_resources">This description also came from the resources.</string>
 </resources>
