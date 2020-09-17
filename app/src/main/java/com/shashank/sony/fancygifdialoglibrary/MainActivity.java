@@ -1,5 +1,7 @@
 package com.shashank.sony.fancygifdialoglibrary;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;

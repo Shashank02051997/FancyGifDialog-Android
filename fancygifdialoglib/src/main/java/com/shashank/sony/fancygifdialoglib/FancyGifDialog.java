@@ -1,18 +1,19 @@
 package com.shashank.sony.fancygifdialoglib;
 
-import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
-import android.support.annotation.ColorRes;
-import android.support.annotation.StringRes;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 
 import pl.droidsonroids.gif.GifImageView;
 
@@ -25,7 +26,7 @@ public class FancyGifDialog {
     private String title, message, positiveBtnText, negativeBtnText;
     @ColorRes
     private int pBtnColor, nBtnColor;
-    private Activity activity;
+    private Context context;
     private FancyGifDialogListener pListener, nListener;
     private Dialog.OnCancelListener cancelListener;
     private boolean cancel;
@@ -35,7 +36,7 @@ public class FancyGifDialog {
     private FancyGifDialog(Builder builder) {
         this.title = builder.title;
         this.message = builder.message;
-        this.activity = builder.activity;
+        this.context = builder.context;
         this.pListener = builder.pListener;
         this.nListener = builder.nListener;
         this.pBtnColor = builder.pBtnColor;
@@ -52,15 +53,15 @@ public class FancyGifDialog {
         private String title, message, positiveBtnText, negativeBtnText;
         @ColorRes
         private int pBtnColor, nBtnColor;
-        private Activity activity;
+        private Context context;
         private FancyGifDialogListener pListener, nListener;
         private boolean cancel;
         int gifImageResource;
         private Dialog.OnCancelListener cancelListener;
 
 
-        public Builder(Activity activity) {
-            this.activity = activity;
+        public Builder(Context context) {
+            this.context = context;
         }
 
         public Builder setTitle(String title) {
@@ -69,7 +70,7 @@ public class FancyGifDialog {
         }
 
         public Builder setTitle(@StringRes int title) {
-            return setTitle(activity.getString(title));
+            return setTitle(context.getString(title));
         }
 
         public Builder setMessage(String message) {
@@ -78,7 +79,7 @@ public class FancyGifDialog {
         }
 
         public Builder setMessage(@StringRes int message) {
-            return setMessage(activity.getString(message));
+            return setMessage(context.getString(message));
         }
 
         public Builder setPositiveBtnText(String positiveBtnText) {
@@ -87,7 +88,7 @@ public class FancyGifDialog {
         }
 
         public Builder setPositiveBtnText(@StringRes int positiveBtnText) {
-            return setPositiveBtnText(activity.getString(positiveBtnText));
+            return setPositiveBtnText(context.getString(positiveBtnText));
         }
 
         public Builder setPositiveBtnBackground(@ColorRes int pBtnColor) {
@@ -101,7 +102,7 @@ public class FancyGifDialog {
         }
 
         public Builder setNegativeBtnText(@StringRes int negativeBtnText) {
-            return setNegativeBtnText(activity.getString(negativeBtnText));
+            return setNegativeBtnText(context.getString(negativeBtnText));
         }
 
         public Builder setNegativeBtnBackground(@ColorRes int nBtnColor) {
@@ -143,7 +144,7 @@ public class FancyGifDialog {
             GifImageView gifImageView;
 
             final Dialog dialog;
-            dialog = new Dialog(activity);
+            dialog = new Dialog(context);
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
             if (dialog.getWindow() != null)
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -166,9 +167,9 @@ public class FancyGifDialog {
             if (negativeBtnText != null)
                 nBtn.setText(negativeBtnText);
             GradientDrawable pbgShape = (GradientDrawable) pBtn.getBackground();
-            pbgShape.setColor(ContextCompat.getColor(activity, pBtnColor));
+            pbgShape.setColor(ContextCompat.getColor(context, pBtnColor));
             GradientDrawable nbgShape = (GradientDrawable) nBtn.getBackground();
-            nbgShape.setColor(ContextCompat.getColor(activity, nBtnColor));
+            nbgShape.setColor(ContextCompat.getColor(context, nBtnColor));
             if (pListener != null) {
                 pBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
