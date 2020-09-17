@@ -53,10 +53,10 @@
                         android:gravity="center"
                         android:paddingLeft="16dp"
                         android:paddingRight="16dp"
-                        tools:text="Granny eating chocolate dialog box"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="16dp" />
+                        android:textSize="16dp"
+                        tools:text="Granny eating chocolate dialog box" />
 
                     <TextView
                         android:id="@+id/message"
@@ -67,9 +67,9 @@
                         android:gravity="center"
                         android:paddingLeft="16dp"
                         android:paddingRight="16dp"
-                        tools:text="This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog."
                         android:textAlignment="center"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        tools:text="This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog." />
 
                     <LinearLayout
                         android:layout_width="match_parent"

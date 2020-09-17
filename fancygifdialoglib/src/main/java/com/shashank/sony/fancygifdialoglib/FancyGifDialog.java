@@ -8,7 +8,6 @@ import android.graphics.drawable.GradientDrawable;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.ColorRes;
@@ -139,7 +138,6 @@ public class FancyGifDialog {
 
         public FancyGifDialog build() {
             TextView message1, title1;
-            ImageView iconImg;
             Button nBtn, pBtn;
             GifImageView gifImageView;
 

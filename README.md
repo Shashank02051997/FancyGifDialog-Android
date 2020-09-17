@@ -31,7 +31,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Shashank02051997:FancyGifDialog-Android:1.2'
+	implementation 'com.github.Shashank02051997:FancyGifDialog-Android:1.3'
 }
 ```
 ## Fancy Gif Dialog
@@ -40,12 +40,12 @@ Dialog with two buttons:
 
 ``` java
 new FancyGifDialog.Builder(this)
-                .setTitle("Granny eating chocolate dialog box")
-                .setMessage("This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog.")
-                .setNegativeBtnText("Cancel")
-                .setPositiveBtnBackground("#FF4081")
-                .setPositiveBtnText("Ok")
-                .setNegativeBtnBackground("#FFA9A7A8")
+                .setTitle("Granny eating chocolate dialog box") // You can also send title like R.string.from_resources
+                .setMessage("This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog.") // or pass like R.string.description_from_resources
+                .setNegativeBtnText("Cancel") // or pass it like android.R.string.cancel
+                .setPositiveBtnBackground("#FF4081") // or pass it like R.color.positiveButton
+                .setPositiveBtnText("Ok") // or pass it like android.R.string.ok
+                .setNegativeBtnBackground("#FFA9A7A8") // or pass it like R.color.negativeButton
                 .setGifResource(R.drawable.gif1)   //Pass your Gif here
                 .isCancellable(true)
                 .OnPositiveClicked(new FancyGifDialogListener() {
