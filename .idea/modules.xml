@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FancyGifDialogLibrary.iml" filepath="$PROJECT_DIR$/FancyGifDialogLibrary.iml" group="FancyGifDialogLibrary" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FancyGifDialogLibrary/app" />
-      <module fileurl="file://$PROJECT_DIR$/fancygifdialoglib/fancygifdialoglib.iml" filepath="$PROJECT_DIR$/fancygifdialoglib/fancygifdialoglib.iml" group="FancyGifDialogLibrary/fancygifdialoglib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FancyGifDialog-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/FancyGifDialog-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.iml" filepath="$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.iml" />
     </modules>
   </component>
 </project>

@@ -25,6 +25,8 @@ public class FancyGifDialog {
     private String title, message, positiveBtnText, negativeBtnText;
     @ColorRes
     private int pBtnColor, nBtnColor;
+    @ColorRes
+    private int titleTxtColor, desTxtColor;
     private Context context;
     private FancyGifDialogListener pListener, nListener;
     private Dialog.OnCancelListener cancelListener;
@@ -38,6 +40,8 @@ public class FancyGifDialog {
         this.context = builder.context;
         this.pListener = builder.pListener;
         this.nListener = builder.nListener;
+        this.titleTxtColor = builder.titleTxtColor;
+        this.desTxtColor = builder.desTxtColor;
         this.pBtnColor = builder.pBtnColor;
         this.nBtnColor = builder.nBtnColor;
         this.positiveBtnText = builder.positiveBtnText;
@@ -52,6 +56,7 @@ public class FancyGifDialog {
         private String title, message, positiveBtnText, negativeBtnText;
         @ColorRes
         private int pBtnColor, nBtnColor;
+        private int titleTxtColor, desTxtColor;
         private Context context;
         private FancyGifDialogListener pListener, nListener;
         private boolean cancel;
@@ -79,6 +84,16 @@ public class FancyGifDialog {
 
         public Builder setMessage(@StringRes int message) {
             return setMessage(context.getString(message));
+        }
+
+        public Builder setTitleTextColor(@ColorRes int titleTxtColor) {
+            this.titleTxtColor = titleTxtColor;
+            return this;
+        }
+
+        public Builder setDescriptionTextColor(@ColorRes int desTxtColor) {
+            this.desTxtColor = desTxtColor;
+            return this;
         }
 
         public Builder setPositiveBtnText(String positiveBtnText) {
@@ -151,15 +166,19 @@ public class FancyGifDialog {
 
 
             //getting resources
-            title1 = (TextView) dialog.findViewById(R.id.title);
-            message1 = (TextView) dialog.findViewById(R.id.message);
-            nBtn = (Button) dialog.findViewById(R.id.negativeBtn);
-            pBtn = (Button) dialog.findViewById(R.id.positiveBtn);
+            title1 = dialog.findViewById(R.id.title);
+            message1 = dialog.findViewById(R.id.message);
+            nBtn = dialog.findViewById(R.id.negativeBtn);
+            pBtn = dialog.findViewById(R.id.positiveBtn);
             gifImageView = dialog.findViewById(R.id.gifImageView);
             gifImageView.setImageResource(gifImageResource);
 
             title1.setText(title);
             message1.setText(message);
+
+            title1.setTextColor(ContextCompat.getColor(context, titleTxtColor));
+            message1.setTextColor(ContextCompat.getColor(context, desTxtColor));
+
             if (positiveBtnText != null)
                 pBtn.setText(positiveBtnText);
             if (negativeBtnText != null)

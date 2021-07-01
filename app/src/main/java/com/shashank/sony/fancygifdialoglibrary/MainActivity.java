@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setTitle("Granny eating chocolate dialog box")
                         .setMessage("This is a granny eating chocolate dialog box. This library is used to help you easily create fancy gify dialog.")
                         .setNegativeBtnText("Cancel")
+                        .setTitleTextColor(R.color.titleText)
+                        .setDescriptionTextColor(R.color.descriptionText)
                         .setPositiveBtnBackground(R.color.positiveButton)
                         .setPositiveBtnText("Ok")
                         .setNegativeBtnBackground(R.color.negativeButton)

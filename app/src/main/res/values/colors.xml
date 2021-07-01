@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="titleText">#000000</color>
+    <color name="descriptionText">#777777</color>
     <color name="positiveButton">#FF4081</color>
     <color name="negativeButton">#A9A7A8</color>
 
