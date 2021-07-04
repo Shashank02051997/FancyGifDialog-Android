@@ -45,9 +45,9 @@ new FancyGifDialog.Builder(this)
                 .setTitleTextColor(R.color.titleText)
                 .setDescriptionTextColor(R.color.descriptionText)
                 .setNegativeBtnText("Cancel") // or pass it like android.R.string.cancel
-                .setPositiveBtnBackground("#FF4081") // or pass it like R.color.positiveButton
+                .setPositiveBtnBackground(R.color.positiveButton) 
                 .setPositiveBtnText("Ok") // or pass it like android.R.string.ok
-                .setNegativeBtnBackground("#FFA9A7A8") // or pass it like R.color.negativeButton
+                .setNegativeBtnBackground(R.color.negativeButton)
                 .setGifResource(R.drawable.gif1)   //Pass your Gif here
                 .isCancellable(true)
                 .OnPositiveClicked(new FancyGifDialogListener() {
@@ -74,7 +74,7 @@ new FancyGifDialog.Builder(this)
                 .setTitleTextColor(R.color.titleText)
                 .setDescriptionTextColor(R.color.descriptionText)
                 .setPositiveBtnText("Ok")
-                .setPositiveBtnBackground("#FF4081")
+                .setPositiveBtnBackground(R.color.positiveButton)
                 .setGifResource(R.drawable.gif1)   //Pass your Gif here
                 .isCancellable(true)
                 .OnPositiveClicked(new FancyGifDialogListener() {
