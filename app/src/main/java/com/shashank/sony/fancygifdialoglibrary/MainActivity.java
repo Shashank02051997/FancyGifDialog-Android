@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setTitle(R.string.from_resources)
                         .setMessage(R.string.description_from_resources)
                         .setNegativeBtnText(android.R.string.cancel)
+                        .setTitleTextColor(R.color.titleText)
+                        .setDescriptionTextColor(R.color.descriptionText)
                         .setPositiveBtnBackground(R.color.positiveButton)
                         .setPositiveBtnText(android.R.string.ok)
                         .setNegativeBtnBackground(R.color.negativeButton)
