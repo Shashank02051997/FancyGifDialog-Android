@@ -42,18 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setNegativeBtnBackground(R.color.negativeButton)
                         .setGifResource(R.drawable.gif1)
                         .isCancellable(true)
-                        .OnPositiveClicked(new FancyGifDialogListener() {
-                            @Override
-                            public void OnClick() {
-                                toaster("ok");
-                            }
-                        })
-                        .OnNegativeClicked(new FancyGifDialogListener() {
-                            @Override
-                            public void OnClick() {
-                                toaster("cancel");
-                            }
-                        })
+                        .OnPositiveClicked(() -> toaster("ok"))
+                        .OnNegativeClicked(() -> toaster("cancel"))
                         .build();
                 break;
             case R.id.button2:
@@ -68,24 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setNegativeBtnBackground(R.color.negativeButton)
                         .setGifResource(R.drawable.gif1)
                         .isCancellable(true)
-                        .setOnCancelListener(new DialogInterface.OnCancelListener() {
-                            @Override
-                            public void onCancel(DialogInterface dialogInterface) {
-                                toaster("Cancelled");
-                            }
-                        })
-                        .OnPositiveClicked(new FancyGifDialogListener() {
-                            @Override
-                            public void OnClick() {
-                                toaster("Ok");
-                            }
-                        })
-                        .OnNegativeClicked(new FancyGifDialogListener() {
-                            @Override
-                            public void OnClick() {
-                                toaster("Cancel");
-                            }
-                        })
+                        .setOnCancelListener(dialogInterface -> toaster("Cancelled"))
+                        .OnPositiveClicked(() -> toaster("Ok"))
+                        .OnNegativeClicked(() -> toaster("Cancel"))
                         .build();
                 break;
         }

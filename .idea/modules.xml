@@ -4,7 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FancyGifDialog-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/FancyGifDialog-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyGifDialog-Android.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.iml" filepath="$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fancygifdialoglib/FancyGifDialog-Android.fancygifdialoglib.unitTest.iml" />
     </modules>
   </component>
 </project>
